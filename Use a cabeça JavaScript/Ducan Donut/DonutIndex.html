@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="JS.js">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" onchange="updateName()"><br><br>
+        <label for="cakedonuts">Donuts:</label>
+        <input type="text" id="cakedonuts" name="cakedonuts" onchange="updateOrder()"><br><br>
+        
+        <label for="glazeddonuts">Donuts com grasse:</label>
+        <input type="text" id="glazeddonuts" name="glazeddonuts" onchange="updateOrder()"><br><br>
+        
+        <label for="hora">Hora de retirada:</label>
+        <input type="text" id="hora" name="hora"><br><br>
+        
+        <label for="sTotal">Sub-Total:</label>
+        <input type="text" id="subtotal" name="subtotal" readonly><br><br>
+        
+        <label for="tax">Taxa:</label>
+        <input type="text" id="tax" name="tax" readonly><br><br>
+        
+        <label for="total">Total:</label>
+        <input type="text" id="total" name="total" readonly><br><br>   
+      
+        <input id="myButton" type="submit" value="Enviar pedido" disabled  onclick="placeOrder(this.form)">
+    </form>
+</body>
+</html>
