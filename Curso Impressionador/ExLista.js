@@ -3,7 +3,7 @@ console.log(lista);
 
 let i = 0;
 while (i < 5) {
-  console.log(`O valor do elemento ${i} da minha lista e ${lista[i]}`);
+  console.log(`O valor do elemento ${i} da minha lista e ${lista[i]}, i=`+i);
   i++;
 }
 
